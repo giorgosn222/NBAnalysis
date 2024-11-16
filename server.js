@@ -3,7 +3,7 @@ const { getTeams, getTeamNews, getAllPlayers, getPlayerData, getGames, getPlayer
 const path = require('path')
 // const axios = require('axios')
 const app = express()
-const port = 8383
+const port = process.env.PORT || 3000
 require('dotenv').config()
 
 app.use(express.static(__dirname))
