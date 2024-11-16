@@ -1,0 +1,413 @@
+.team-container {
+  background-color: var(--team-color)
+}
+
+.team-header {
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex: 1fr 1fr 2fr;
+  margin: 0 7%;
+}
+
+.team-logo {
+  height: 115px;
+  width: 115px;
+  margin: 42px 32px 42px 0px;
+}
+
+.team-name {
+  padding-right: 350px;
+  display: block;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 36px;
+}
+
+.team-record {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.team-ranks {
+  display: flex;
+  text-align: center;
+}
+
+.points-rank, .rebounds-rank, .assists-rank {
+  padding: 0 50px;
+  border-right: 1px solid white;;
+}
+
+.opponent-points-rank {
+  padding-left: 50px;
+}
+
+.type {
+  font-weight: 800;
+}
+
+.team-profile {
+  color: #000;
+  width: 84%;
+  margin: 110px auto;
+  display: none;
+  flex-direction: column;
+}
+
+.team-profile-container {
+  margin: 0 0 60px;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-profile-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 12px;
+  padding: 0 0 12px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #ebe9e7;
+  align-items: baseline;
+  line-height: 0.8;
+}
+
+.team-profile-header h1 {
+  align-items: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 8px 0 0;
+}
+
+.team-profile-header a {
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.25;
+  margin: 0 0 0 8px;
+  color: #0268d6;
+  text-decoration: none;
+}
+
+.team-profile-header a:hover {
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  text-align: left;
+}
+
+table th {
+  font-size: 10px;
+  font-family: "Roboto Condensed", "Arial", "sans-serif";
+  font-weight: 700;
+  background-color: #e5e7eb;
+  color: #343232;
+  border: none;
+  padding: 14px 6px;
+  letter-spacing: 1px;
+}
+
+table td {
+  font-size: 14px;
+  font-family: "Roboto Condensed", "Arial", "sans-serif";
+  font-weight: 400;
+  padding: 8px 6px;
+  border-bottom: 1px solid #ebe9e7;
+}
+
+table tr:hover {
+  background-color: #dfe7f1;
+}
+
+table tr a {
+  text-decoration: none;
+  color: #0268d6;
+}
+
+table th:nth-child(2),
+table td:nth-child(2),
+table th:nth-child(3),
+table td:nth-child(3),
+table th:nth-child(4),
+table td:nth-child(4),
+table th:nth-child(5),
+table td:nth-child(5),
+table th:nth-child(6),
+table td:nth-child(6),
+table th:nth-child(7),
+table td:nth-child(7),
+table th:nth-child(8),
+table td:nth-child(8)
+{
+  text-align: center;
+}
+
+#news-and-background-container:nth-child(1) {
+  width: 63%;
+}
+
+#news-and-background-container:nth-child(2) {
+  width: 33%;
+  max-height: 350px;
+}
+
+.news-container {
+  display: flex;
+  padding: 0;
+  margin: 25px 0px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 2px #dcdddf;
+  overflow: hidden;
+}
+
+.news-article {
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+.news-article img{
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  object-fit: scale-down;
+}
+
+.news-title {
+  font-size: 25px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+dl {
+  display: flex;
+  flex-direction: column;
+}
+
+.definition-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+dt {
+  font-weight: 700;
+  flex: 1;
+}
+
+dd {
+  font-weight: 400;
+  flex: 1;
+  margin-left: 10px;
+}
+
+#news-link1, #news-link2 {
+  text-decoration: none;
+  color: #000;
+}
+
+#matches {
+  display: flex;
+  justify-content: space-between;
+}
+
+.match {
+  padding: 0 10px;
+  width: 13%;
+  cursor: pointer;
+}
+
+.match:not(:last-child) {
+  border-right: solid 1px #f6f6f6;
+}
+
+.team1, .team2 {
+  display: flex;
+  margin: 5px 0px;
+  align-items: center;
+}
+
+.schedule-team-name {
+  padding-right: 0px;
+  font-size: 13px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+}
+
+.team1 img, .team2 img {
+  margin-right: 3px;
+  width: 25px;
+  height: 25px;
+}
+
+.team1-score, .team2-score {
+  font-size: 13px;
+  margin-left: auto;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+}
+
+#date, #time {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.injury-container {
+  
+}
+
+.injury-content {
+  text-decoration: none;
+  border-top: #dcdddf dotted 2px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  display: flex;
+
+}
+
+.injury-content:nth-child(1) {
+  border: none;
+  margin-top: 4px;
+}
+
+
+
+.image-section {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px #dcdddf;
+  flex-shrink: 0;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.injury-details-section {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.injury-details-section-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.injury-name-position {
+  display: flex;
+}
+
+.injury-name {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #151617;
+}
+
+.injury-position {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #6c6d6f;
+  margin: 0 0 0 6px;
+}
+
+.injury-status {
+  display: flex;
+  color: #6c6d6f;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+}
+
+.status-circle {
+  width: 12px;
+  height: 12px;
+  background-color: var(--designation-color);
+  border-radius: 50%;
+  border: none;
+  align-self: center;
+  margin: 0 0 0 6px;
+}
+
+.injury-type {
+  margin-left: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: #151617;
+}
+
+.injury-return {
+  padding: 6px 0 12px 0;
+  color: #6c6d6f;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.return-date {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #151617;
+}
+
+.injury-details-section-bottom {
+  color: #6c6d6f;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+}
+
+.injury-date {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: #2b2c2d;
+}
+
+.rank-span {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-size: 24px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.rank {
+  text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+}
+
+.average {
+  font-family: "Roboto Condensed", "Arial", "sans-serif";
+  font-size: 16px;
+  font-weight: 700;
+
+}

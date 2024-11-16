@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NBAnalysis</title>
+    <link rel="stylesheet" href="styles/nav-bar.css" />
+    <link rel="stylesheet" href="styles/schedule.css" />
+    <link rel="icon" href="images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" class="logo" /></a>
+        <ul>
+          <li><a href="all-teams.html">Teams</a></li>
+          <li><a href="all-players.html">Players</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="#">Injuries</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+        <a href="#" class="btn">EN</a>
+      </nav>
+    </div>
+    <div class="schedule-container">
+      <div class="schedule-list-container">
+        <div class="schedule-list-header">
+          <h1>DAILY SCHEDULE</h1>
+          <div class="date-search-container">
+            <input type="date" />
+            <button>Seach Date</button>
+          </div>
+        </div>
+        <div class="schedule-list-content">
+          <table>
+            <thead>
+              <tr>
+                <th>STATUS</th>
+                <th>AWAY TEAM</th>
+                <th>POINTS AWAY</th>
+                <th></th>
+                <th>POINTS HOME</th>
+                <th>HOME TEAM</th>
+                <th>GAME TIME</th>
+                <th>LINEUP INFO</th>
+              </tr>
+            </thead>
+            <tbody id="roster-table-body">
+              <tr>
+                <td>Not Started Yet</td>
+                <td>
+                  <span class="team-name">Atlanta Hawks</span>
+                  <img src="images/teams/ATL.svg" class="team-logo" />
+                </td>
+                <td>0</td>
+                <td>-</td>
+                <td>0</td>
+                <td>
+                  <img class="team-logo" src="images/teams/BKN.svg" />
+                  <span class="team-name">Brooklyn Nets</span>
+                </td>
+                <td>8:00p</td>
+                <td>
+                  <button class="lineup-button">!</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Finished</td>
+                <td>
+                  <span class="team-name">Golden State Warriors</span>
+                  <img src="images/teams/ATL.svg" class="team-logo" />
+                </td>
+                <td>120</td>
+                <td>-</td>
+                <td>110</td>
+                <td>
+                  <img class="team-logo" src="images/teams/BKN.svg" />
+                  <span class="team-name">San Antonio Spurs</span>
+                </td>
+                <td>8:00p</td>
+                <td>
+                  <button class="lineup-button">!</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/schedule.js"></script>
+  </body>
+</html>

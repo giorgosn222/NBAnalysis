@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NBAnalysis</title>
+    <link rel="stylesheet" href="styles/team.css" />
+    <link rel="stylesheet" href="styles/nav-bar.css" />
+    <link rel="icon" href="images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" class="logo" /></a>
+        <ul>
+          <li><a href="all-teams.html">Teams</a></li>
+          <li><a href="all-players.html">Players</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="#">Injuries</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+        <a href="#" class="btn">EN</a>
+      </nav>
+      <div class="team-container">
+        <div class="team-header">
+          <div class="team-logo">
+            <img src="" />
+          </div>
+          <div class="team-info">
+            <div class="team-name"></div>
+            <div class="team-record"></div>
+          </div>
+          <div class="team-ranks">
+            <div class="points-rank">
+              <div class="type">PPG</div>
+              <div class="rank"></div>
+              <div class="average"></div>
+            </div>
+            <div class="rebounds-rank">
+              <div class="type">RPG</div>
+              <div class="rank"></div>
+              <div class="average"></div>
+            </div>
+            <div class="assists-rank">
+              <div class="type">APG</div>
+              <div class="rank"></div>
+              <div class="average"></div>
+            </div>
+            <div class="opponent-points-rank">
+              <div class="type">OPPG</div>
+              <div class="rank"></div>
+              <div class="average"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-profile">
+        <div class="team-profile-container">
+          <div class="team-profile-header">
+            <h1>Upcoming Games</h1>
+            <a href="schedule.html">See Full Schedule</a>
+          </div>
+          <div id="matches" class="team-profile-content"></div>
+        </div>
+        <div class="team-profile-container">
+          <div class="team-profile-header">
+            <h1>Roster</h1>
+          </div>
+          <div class="team-profile-content">
+            <table>
+              <thead>
+                <tr>
+                  <th>PLAYER</th>
+                  <th>JERSEY NUMBER</th>
+                  <th>POSITION</th>
+                  <th>HEIGHT</th>
+                  <th>WEIGHT</th>
+                  <th>BIRTH DATE</th>
+                  <th>AGE</th>
+                  <th>EXPERIENCE</th>
+                  <th>COLLEGE</th>
+                </tr>
+              </thead>
+              <tbody id="roster-table-body"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="team-profile-container">
+          <div class="team-profile-header" id="team-injuries">
+            <h1>INJURIES</h1>
+            <a href="#">See all</a>
+          </div>
+          <div class="team-profile-content">
+            <div class="injury-container" id="injury-container"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="team-profile-container"
+            id="news-and-background-container"
+          >
+            <div class="team-profile-header">
+              <h1>TEAM NEWS</h1>
+              <a href="#">See all</a>
+            </div>
+            <div class="team-profile-content">
+              <a href="" id="news-link1"
+                ><div class="news-container">
+                  <div class="news-article">
+                    <img id="news-image1" src="" />
+                    <div class="news-title" id="news-title1"></div>
+                  </div></div
+              ></a>
+              <a href="" id="news-link2">
+                <div class="news-container">
+                  <div class="news-article">
+                    <img id="news-image2" src="" />
+                    <div class="news-title" id="news-title2"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="team-profile-container"
+            id="news-and-background-container"
+          >
+            <div class="team-profile-header">
+              <h1>BACKGROUND</h1>
+            </div>
+            <div class="team-profile-content background">
+              <dl>
+                <div class="definition-item">
+                  <dt>Founded</dt>
+                  <dd id="dd1"></dd>
+                </div>
+                <div class="definition-item">
+                  <dt>City</dt>
+                  <dd id="dd2"></dd>
+                </div>
+                <div class="definition-item">
+                  <dt>Arena</dt>
+                  <dd id="dd3"></dd>
+                </div>
+                <div class="definition-item">
+                  <dt>G-League</dt>
+                  <dd id="dd4"></dd>
+                </div>
+                <div class="definition-item">
+                  <dt>Governor(s)</dt>
+                  <dd id="dd5"></dd>
+                </div>
+                <div class="definition-item">
+                  <dt>General Manager</dt>
+                  <dd id="dd6"></dd>
+                </div>
+                <div class="definition-item">
+                  <dt>Head Coach</dt>
+                  <dd id="dd7"></dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/team.js" type="module"></script>
+    <script src="data/teams-background.js" type="module"></script>
+  </body>
+</html>

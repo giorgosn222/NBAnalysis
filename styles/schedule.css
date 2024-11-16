@@ -1,0 +1,109 @@
+body {
+  background-color: #f3f3f3;
+}
+
+.container {
+  background-color: #f3f3f3;
+}
+
+.schedule-container {
+  color: #000;
+  width: 84%;
+  margin: 75px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-list-container {
+  margin: 0 0 48px;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.schedule-list-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 12px;
+  padding: 0 0 12px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #ebe9e7;
+  align-items: baseline;
+  line-height: 0.8;
+}
+
+.schedule-list-header h1 {
+  align-items: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 8px 0 0;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  text-align: center;
+}
+
+table th {
+  font-size: 10px;
+  font-family: "Roboto Condensed", "Arial", "sans-serif";
+  font-weight: 700;
+  background-color: #e5e7eb;
+  color: #343232;
+  border: none;
+  padding: 14px 6px;
+  letter-spacing: 1px;
+}
+
+table td {
+  font-size: 14px;
+  font-family: "Roboto Condensed", "Arial", "sans-serif";
+  font-weight: 400;
+  padding: 8px 6px;
+  border-bottom: 1px solid #ebe9e7;
+}
+
+table tr:hover {
+  background-color: #dfe7f1;
+}
+
+table td:last-child,
+table th:last-child {
+  text-align: center;
+}
+
+table td:nth-child(1),
+table th:nth-child(1) {
+  text-align: left;
+}
+
+.lineup-button {
+  opacity: 0.5;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+  color: white;
+  border: none;
+}
+
+.lineup-button:hover {
+  opacity: 1;
+}
+
+.team-logo {
+  width: 30px; 
+  vertical-align: middle;
+}
+
+.team-name {
+  vertical-align: middle;
+}

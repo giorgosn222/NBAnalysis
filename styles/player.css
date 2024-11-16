@@ -1,0 +1,433 @@
+.player-container {
+  background-color: var(--team-color);
+  display: none;
+  flex-direction: column;
+}
+
+.player-container-top {
+  position: relative;
+  overflow: hidden;
+}
+
+.player-container-bot {
+  padding-left: 80px;
+  padding-right: 80px;
+  position: relative;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.team-logo-background {
+  width: 50%;
+  position: absolute;
+  opacity: .05;
+  transform: translateY(-35%);
+}
+
+.player-main-container {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  max-width: 1440px;
+  position: relative;
+  display: block;
+}
+
+.player-container-divider-hor {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #fff;
+  opacity: 1;
+}
+
+.team-logo-container {
+  position: relative;
+  min-width: 100%;
+}
+
+.team-logo-container img {
+  display: block;
+  min-width: 100%;
+}
+
+.player-main-container-inner {
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+}
+
+.player-main-container-inner-left {
+  width: 33.3%;
+  display: block;
+}
+
+.player-main-container-inner-right {
+  width: 66.6%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.player-main-container-inner-left img {
+  margin-top: 96px;
+  width: 83.3%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.player-details-section {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.team-logo-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.player-main-info {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.player-full-name {
+  font-size: 60px;
+  font-family: "Bebas Neue", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.team-logo-container2 {
+  position: relative;
+}
+
+.team-logo-container2 img {
+  padding: 8px 40px; 
+  width: 100%;
+  cursor: pointer;
+}
+
+.player-stats-container {
+  flex-direction: row;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+
+.player-stats-section {
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  min-width: 40%;
+}
+
+.player-general-info-section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.player-stats-divider-ver-side {
+  display: block;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-color: #fff;
+  opacity: 1;
+}
+
+.player-stat {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.player-stats-divider-ver {
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-color: #fff;
+  opacity: 1;
+}
+
+.player-stat-label {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+}
+
+.player-stat-value {
+  text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 0.88;
+}
+
+.player-general-info-divider-hor-side {
+  display: none;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #fff;
+  opacity: 1;
+}
+
+.player-general-info-container {
+  display: flex;
+}
+
+.player-general-info-divider-hor {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #fff;
+  opacity: 1;
+}
+
+.player-general-info {
+  width: 25%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 1 1;
+}
+
+.player-general-info-divider-ver {
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-color: #fff;
+  opacity: 1;
+}
+
+.player-general-info-label {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.player-general-info-value {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.player-profile {
+  display: none;
+  color: #000;
+  width: 84%;
+  margin: 110px auto;
+  flex-direction: column;
+}
+
+.player-profile-container {
+  margin: 0 0 48px;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.player-profile-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 12px;
+  padding: 0 0 12px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ebe9e7;
+  align-items: baseline;
+  line-height: 0.8;
+}
+
+.player-profile-header h1{
+  align-items: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 8px 0 0;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  text-align: right;
+}
+
+table th {
+  font-size: 10px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  background-color: #e5e7eb;
+  color: #343232;
+  border: none;
+  padding: 14px 6px;
+  letter-spacing: 1px;
+}
+
+table td {
+  font-size: 14px;
+  font-family: "Roboto Condensed", "Arial", "sans-serif";
+  font-weight: 400;
+  padding: 8px 6px;
+  border-bottom: 1px solid #ebe9e7;
+}
+
+table td a {
+  color: #0268d6;
+  text-decoration: none;
+}
+
+table td a:hover {
+  text-decoration: underline;
+}
+
+table tr:hover {
+  background-color: #dfe7f1;
+}
+
+
+table th:nth-child(1),
+table td:nth-child(1),
+table th:nth-child(2),
+table td:nth-child(2)
+ {
+  text-align: left;
+}
+
+table td:last-child,
+table th:last-child
+ {
+  text-align: center;
+}
+
+.injury-designation {
+  display: flex;
+  align-items: center;
+}
+
+#injury-icon {
+  width: 30px;
+}
+
+.injury-designation p {
+  padding-right: 10px;
+  padding-left: 5px;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+}
+
+.injury-dates {
+  display: flex;
+  justify-content: space-between;
+}
+
+.injury-return-date {
+  color: #2b2c2d;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+.estimated-return-date {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2b2c2d;
+  font-family: "Inter", sans-serif;;
+}
+
+.injury-date {
+  color: #2b2c2d;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+
+.injury-description {
+  margin-top: 20px;
+  color: var(--designation-color);
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+#injury-container {
+  display: none;
+}
+
+.news-container {
+  display: flex;
+  padding: 0;
+  margin: 25px 0px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 2px #dcdddf;
+  overflow: hidden;
+}
+
+.news-article {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  width: 100%;
+}
+
+.news-image-container {
+  padding: 0;
+  margin: 0;
+  height: 124px;
+}
+
+.news-image-container img {
+  padding: 0;
+  margin: 0;
+  width: 310px;
+  height: 124px;
+  object-fit: contain;
+}
+
+.news-title {
+  width: 100%;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 10px;
+  text-align: center;
+  color: #2b2c2d;
+}
+
+#news-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.player-profile-header a {
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.25;
+  margin: 0 0 0 8px;
+  color: #0268d6;
+  text-decoration: none;
+}
+
+.player-profile-header a:hover {
+  text-decoration: underline;
+}
+
+.player-profile-container:nth-child(2),
+.player-profile-container:nth-child(3) {
+  padding-bottom: 0;
+}

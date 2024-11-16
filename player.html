@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NBAnalysis</title>
+    <link rel="stylesheet" href="styles/player.css" />
+    <link rel="stylesheet" href="styles/nav-bar.css" />
+    <link rel="icon" href="images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" class="logo" /></a>
+        <ul>
+          <li><a href="all-teams.html">Teams</a></li>
+          <li><a href="all-players.html">Players</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="#">Injuries</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+        <a href="#" class="btn">EN</a>
+      </nav>
+      <div class="player-container">
+        <div class="player-container-top">
+          <div class="team-logo-background">
+            <div class="team-logo-container">
+              <img src="" />
+            </div>
+          </div>
+          <div class="player-main-container">
+            <div class="player-main-container-inner">
+              <div class="player-main-container-inner-left">
+                <img src="" />
+              </div>
+              <div class="player-main-container-inner-right">
+                <div class="player-details-section">
+                  <p class="player-main-info"></p>
+                  <p class="player-full-name" id="firstName"></p>
+                  <p class="player-full-name" id="lastName"></p>
+                </div>
+                <div class="team-logo-section">
+                  <div class="team-logo-container2">
+                    <img src="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="player-container-divider-hor"></div>
+        </div>
+        <div class="player-container-bot">
+          <div class="player-stats-container">
+            <div class="player-stats-section">
+              <div class="player-stats-divider-ver-side"></div>
+              <div class="player-stat">
+                <p class="player-stat-label">PPG</p>
+                <p class="player-stat-value" id="points"></p>
+              </div>
+              <div class="player-stats-divider-ver"></div>
+              <div class="player-stat">
+                <p class="player-stat-label">RPG</p>
+                <p class="player-stat-value" id="rebounds"></p>
+              </div>
+              <div class="player-stats-divider-ver"></div>
+              <div class="player-stat">
+                <p class="player-stat-label">APG</p>
+                <p class="player-stat-value" id="assists"></p>
+              </div>
+              <div class="player-stats-divider-ver"></div>
+              <div class="player-stat">
+                <p class="player-stat-label">MPG</p>
+                <p class="player-stat-value" id="minutes"></p>
+              </div>
+              <div class="player-stats-divider-ver-side"></div>
+            </div>
+            <div class="player-general-info-section">
+              <div class="player-general-info-divider-hor-side"></div>
+              <div class="player-general-info-container">
+                <div class="player-general-info">
+                  <p class="player-general-info-label">HEIGHT</p>
+                  <p class="player-general-info-value" id="height"></p>
+                </div>
+                <div class="player-general-info-divider-ver"></div>
+                <div class="player-general-info">
+                  <p class="player-general-info-label">WEIGHT</p>
+                  <p class="player-general-info-value" id="weight"></p>
+                </div>
+                <div class="player-general-info-divider-ver"></div>
+
+                <!-- <div class="player-general-info">
+                  <p class="player-general-info-label">COUNTRY</p>
+                  <p class="player-general-info-value">Serbia</p>
+                </div>
+                <div class="player-general-info-divider-ver"></div> -->
+
+                <div class="player-general-info">
+                  <p class="player-general-info-label">COLLEGE</p>
+                  <p class="player-general-info-value" id="college"></p>
+                </div>
+                <div class="player-general-info-divider-ver"></div>
+              </div>
+              <div class="player-general-info-divider-hor"></div>
+              <div class="player-general-info-container">
+                <div class="player-general-info">
+                  <p class="player-general-info-label">AGE</p>
+                  <p class="player-general-info-value" id="age"></p>
+                </div>
+                <div class="player-general-info-divider-ver"></div>
+                <div class="player-general-info">
+                  <p class="player-general-info-label">BIRTHDATE</p>
+                  <p class="player-general-info-value" id="birthdate"></p>
+                </div>
+                <div class="player-general-info-divider-ver"></div>
+                <!-- <div class="player-general-info">
+                  <p class="player-general-info-label">DRAFT</p>
+                  <p class="player-general-info-value">2014 R2 Pick 41</p>
+                </div>
+                <div class="player-general-info-divider-ver"></div> -->
+                <div class="player-general-info">
+                  <p class="player-general-info-label">EXPERIENCE</p>
+                  <p class="player-general-info-value" id="exp"></p>
+                </div>
+                <div class="player-general-info-divider-ver"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="player-profile">
+        <div class="player-profile-container" id="injury-container">
+          <div class="player-profile-header">
+            <h1>Status</h1>
+            <div class="injury-designation">
+              <img id="injury-icon" src="" />
+              <p></p>
+            </div>
+          </div>
+          <div class="player-profile-content">
+            <div class="injury-dates">
+              <p class="injury-return-date">
+                Est. Return Date:
+                <span class="estimated-return-date"></span>
+              </p>
+              <p class="injury-date"></p>
+            </div>
+            <div class="injury-description"></div>
+          </div>
+        </div>
+        <div class="player-profile-container">
+          <div class="player-profile-header">
+            <h1>LAST 5 GAMES</h1>
+          </div>
+          <div class="player-profile-content">
+            <table>
+              <thead>
+                <tr>
+                  <th>GAME DATE</th>
+                  <th>MATCHUP</th>
+                  <th>MIN</th>
+                  <th>PTS</th>
+                  <th>FGM</th>
+                  <th>FGA</th>
+                  <th>FG%</th>
+                  <th>3PM</th>
+                  <th>3PA</th>
+                  <th>3P%</th>
+                  <th>FTM</th>
+                  <th>FTA</th>
+                  <th>FT%</th>
+                  <th>OREB</th>
+                  <th>DREB</th>
+                  <th>REB</th>
+                  <th>AST</th>
+                  <th>STL</th>
+                  <th>BLK</th>
+                  <th>TOV</th>
+                  <th>PF</th>
+                  <th>+/-</th>
+                  <th>FANTASY POINTS</th>
+                </tr>
+              </thead>
+              <tbody id="roster-table-body"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="player-profile-container">
+          <div class="player-profile-header">
+            <h1>PLAYER NEWS</h1>
+            <a href="#">See all</a>
+          </div>
+          <div class="player-profile-content" id="player-news-container"></div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/player.js" type="module"></script>
+  </body>
+</html>

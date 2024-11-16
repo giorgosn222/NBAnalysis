@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NBAnalysis</title>
+    <link rel="stylesheet" href="styles/all-players.css" />
+    <link rel="stylesheet" href="styles/nav-bar.css" />
+    <link rel="icon" href="images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" class="logo" /></a>
+        <ul>
+          <li><a href="all-teams.html">Teams</a></li>
+          <li><a href="all-players.html">Players</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="#">Injuries</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+        <a href="#" class="btn">EN</a>
+      </nav>
+      <div class="players-container">
+        <div class="players-list-container">
+          <div class="players-list-header">
+            <h1>ALL ACTIVE PLAYERS</h1>
+            <h1>SEARCH FILTERS</h1>
+          </div>
+          <div class="row">
+            <div class="players-list-content">
+              <table>
+                <thead>
+                  <tr>
+                    <th>PLAYER</th>
+                    <th>POSITION</th>
+                    <th>TEAM</th>
+                  </tr>
+                </thead>
+                <tbody id="players-table-body">
+                  <tr></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="players-list-content2">
+              <div class="filter1">
+                <h3>Position</h3>
+                <p>
+                  <label>
+                    <input type="radio" name="position" value="PG" /> PG
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="position" value="SG" /> SG
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="position" value="SF" /> SF
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="position" value="PF" /> PF
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="position" value="C" /> C
+                  </label>
+                </p>
+              </div>
+              <div class="filter2">
+                <h3>Team</h3>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="ATL" /> ATL
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="BOS" /> BOS
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="BKN" /> BKN
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="CHA" /> CHA
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="CHI" /> CHI
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="CLE" /> CLE
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="DAL" /> DAL
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="DEN" /> DEN
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="DET" /> DET
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="GS" /> GS
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="HOU" /> HOU
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="IND" /> IND
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="LAC" /> LAC
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="LAL" /> LAL
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="MEM" /> MEM
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="MIA" /> MIA
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="MIL" /> MIL
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="MIN" /> MIN
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="NO" /> NO
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="NY" /> NY
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="OKC" /> OKC
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="ORL" /> ORL
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="PHI" /> PHI
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="PHO" /> PHO
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="POR" /> POR
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="SAC" /> SAC
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="SA" /> SA
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="TOR" /> TOR
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="UTA" /> UTA
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="team" value="WAS" /> WAS
+                  </label>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/all-players.js"></script>
+  </body>
+</html>

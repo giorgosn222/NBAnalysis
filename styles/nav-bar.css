@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --ATL: #e03a3e;
+  --BKN: #000;
+  --BOS: #008348;
+  --CHA: #00788c;
+  --CHI: #ce1141;
+  --CLE: #6f263d;
+  --DAL: #0053bc;
+  --DEN: #0e2240;
+  --DET: #1d428a;
+  --GS: #006bb6;
+  --HOU: #ce1141;
+  --IND: #002d62;
+  --LAC: #12173f;
+  --LAL: #552583;
+  --MEM: #5d76a9;
+  --MIA: #98002e;
+  --MIL: #00471b;
+  --MIN: #0c2340;
+  --NO: #002b5c;
+  --NY: #006bb6;
+  --OKC: #007ac1;
+  --ORL: #0077c0;
+  --PHI: #006bb6;
+  --PHO: #1d1160;
+  --POR: #e03a3e;
+  --SAC: #5a2d81;
+  --SA: #000;
+  --TOR: #000;
+  --UTA: #002b5c;
+  --WAS: #002b5c;
+  --Out: #ff0000;
+  --Day-To-Day: #ffd43b;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  color: white;
+}
+
+nav {
+  background-color: #020609;
+  width: 100%;
+  padding: 20px 7%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  cursor: pointer;
+}
+
+nav ul {
+  flex: 1;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .btn {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
